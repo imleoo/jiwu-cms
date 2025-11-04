@@ -1,7 +1,6 @@
 package models
 
 import (
-	"fmt"
 	"time"
 )
 
@@ -389,9 +388,8 @@ func MultiSelectLanguageisactive(langData *TblLanguage, id []int, tenantid strin
 }
 
 func SetDefaultLang(langId, defaultVal int, tenantId string) (language TblLanguage, err error) {
-	fmt.Println("Seumm")
 
-	if defaultVal != 1 {
+	if defaultVal == 1 {
 
 		if err := DB.Table("tbl_users").Where("is_deleted=0 and is_active = 1 and (tenant_id is NULL or tenant_id = ?)", tenantId).Update("default_language_id", langId).Error; err != nil {
 

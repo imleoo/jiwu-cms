@@ -354,3 +354,5 @@ ERROR 2025/10/14 17:27:30 user_controller.go:323: check email error: record not 
 ERROR 2025/10/14 17:27:30 user_controller.go:342: check number error: record not found
 ERROR 2025/10/14 18:31:53 general_settings.go:58: Getting data from general settings Error:record not found
 ERROR 2025/10/23 12:16:21 forms_builder.go:109: unable to fetch the template module list: record not found
+ERROR 2025/11/04 22:47:05 auth_controller.go:177: CheckLogin error: record not found
+ERROR 2025/11/04 22:47:24 auth_controller.go:177: CheckLogin error: invalid password
